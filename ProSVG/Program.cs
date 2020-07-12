@@ -10,6 +10,8 @@ namespace ProSVG
     {
         static void Main(string[] args)
         {
+            new Menu().Loop();
+            Console.ReadKey();
         }
     }
 }

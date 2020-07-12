@@ -44,6 +44,7 @@
     <Compile Include="Circle.cs" />
     <Compile Include="ColorSVG.cs" />
     <Compile Include="ElementSVG.cs" />
+    <Compile Include="ImageSVG.cs" />
     <Compile Include="Line.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
