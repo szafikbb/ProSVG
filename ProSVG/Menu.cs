@@ -59,6 +59,7 @@ namespace ProSVG
                 }
                 catch(Exception)
                 {
+                    Console.Clear();
                     Console.WriteLine("Zła wartość, podaj ponownie!");
                 }
             }
@@ -95,7 +96,15 @@ namespace ProSVG
 
         private void AddCircle()
         {
+            Console.WriteLine("Podaj współrzędną x1 koła.");
+            int x = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj współrzędną y1 koła.");
+            int y = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj promień koła.");
+            int r = int.Parse(Console.ReadLine());
+            ColorSVG color = GetColor();
 
+            img.AddElement(new Circle(x, y, r, color));
         }
 
         private void ShowSVG()
